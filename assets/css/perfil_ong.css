@@ -1,0 +1,720 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Poppins, serif;
+}
+
+:root {
+    --laranja: #F37500;
+    --azul: #082C5B;
+    --branco: white;
+    --cinza: #898989;
+}
+
+/* Início - Cabeçalho */
+
+header {
+    background-color: var(--branco);
+    box-shadow: #2f303d25 2px 6px 5px;
+    padding-bottom: 10px;
+    gap: 50px;
+}
+
+.logo1 {
+    padding-top: 10px;
+    width: 205px;
+    margin-left: -60px;
+    padding-left: 50px;
+}
+
+.text-nav {
+    gap: 20px;
+    text-decoration: none;
+    align-items: center;
+    font-family: 'Microsoft JhengHei UI', sans-serif;
+    color: #000;
+    font-size: 15px;
+}
+
+.text-nav:hover {
+    color: var(--laranja);
+}
+
+.doe-agora {
+    font-size: 15px;
+    gap: 20px;
+    text-decoration: none;
+    margin-left: 50px;
+    align-items: center;
+    font-family: 'Microsoft JhengHei UI', sans-serif;
+    color: var(--branco);
+    background-color: var(--laranja);
+    border-radius: 25px;
+    border-color: var(--laranja);
+    border: none;
+    padding: 10px;
+}
+
+.doe-agora:hover {
+    color: var(--laranja);
+    background-color: var(--branco);
+    border-color: var(--laranja);
+    border: 2px solid var(--laranja);
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 580px;
+}
+ 
+.input-header {
+    font-family: 'Microsoft JhengHei UI', sans-serif;
+    width: 100%;
+    height: 30px;
+    padding-left: 2.5rem;
+    box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #000;
+    border: 0;
+    border-radius: 23px;
+    background-color: var(--branco);
+    outline: none;
+    color: var(--cinza);
+    cursor: text;
+    z-index: 0;
+}
+ 
+.input-header::placeholder {
+    color: var(--cinza);
+}
+ 
+.input-header:hover {
+    box-shadow: 0 0 0 2.5px #2f303d, 0px 0px 25px -15px #000;
+}
+ 
+.input-header:active {
+    transform: scale(0.95);
+}
+ 
+.input-header:focus {
+    box-shadow: 0 0 0 2.5px #2f303d;
+    width: 800px !important;
+    border: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    fill: #89898c;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Fim - Cabeçalho */
+.banner {
+    width: 100%;
+    margin: 0;
+    height: 350px;
+    background-image: url("assets/img/doadorfundo.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Contêiner relativo */
+    display: inline-block;
+}
+
+.lar-sub.active-link {
+    text-decoration: underline; /* Sublinhado ao clicar */
+    font-weight: bold; /* Negrito ao clicar */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;/* Ajusta a imagem para cobrir o espaço sem distorcer */
+}
+
+.banner h1 {
+    position: absolute; /* Texto absoluto em relação ao contêiner */
+    top: 120px; /* Ajuste a posição vertical */
+    left: 50px; /* Ajuste a posição horizontal */
+    color: white; /* Cor do texto */
+
+}
+.banner p {
+    position: absolute; /* Texto absoluto em relação ao contêiner */
+    top: 200px; /* Ajuste a posição vertical */
+    left: 50px; /* Ajuste a posição horizontal */
+    font-size: 22px;
+    color: white; /* Cor do texto */
+}
+
+.bannerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px; /* sobrposição */
+    position: relative;
+}
+
+.bannerrr {
+    align-items: center;
+    margin-top: -50px; /* sobrposição */
+    position: relative;
+    border-radius: 15px;
+    width: 255px;
+    margin-left: 80px;
+}
+
+.caixas {
+    display: flex;
+    gap: 30px;
+}
+
+.caixa {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 20px;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.display_flex {
+    display: flex;
+}
+
+.align {
+    text-align: center;
+}
+
+.justify{
+    justify-content: center;
+}
+.plano {
+    width: 100%;
+    margin: 0;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Contêiner relativo */
+    display: inline-block;
+}
+
+.laranja {
+    background-color: var(--laranja);
+    padding: 10px;
+    margin-top: 50px;
+    padding-left: 30px
+}
+
+
+.descricao {
+    background: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.contato {
+    text-align: left;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}
+
+.excluir {
+    background-color: #d9534f;
+}
+
+.editar {
+    background-color: #f0ad4e;
+}
+
+.novo {
+    background-color: #5bc0de;
+}
+
+.ajuste{
+    padding-left: 50px
+}
+
+
+
+        /* Início - Rodapé */
+
+footer {
+    background-color: var(--branco);
+    padding-top: 60px;
+}
+
+.logo2 {
+    padding-top: 10px;
+    padding-right: 30px;
+    width: 170px;
+    margin-left: 79px;
+}
+
+.p-t {
+    padding-bottom: 40px;
+}
+
+.tam {
+    width: 62%;
+}
+
+.tam2 {
+    font-size: 18px;
+}
+
+.tam3 {
+    font-size: 18px;
+}
+
+.azul {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 10px;
+}
+
+.azul h5 {
+    font-weight: normal;
+}
+
+.space {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.margin {
+    margin-top: -17.2px !important;
+}
+
+.imgfooter {
+    width: 30px;
+}
+
+.alt {
+    width: 35px;
+}
+
+/* Fim - Rodapé */
+
+/* RESPONSIVO */
+
+@media (max-width: 426px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 8px;
+    }
+
+    .logo1 {
+        width: 150px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .group {
+        width: 90%;
+        margin: 0 auto 12px auto;
+    }
+
+    .text-nav {
+        font-size: 15px;
+    }
+
+    .doe-agora {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .banner h1 {
+        font-size: 22px;
+        top: 25px;
+        left: 25px;
+    }
+
+    .banner p {
+        font-size: 17px;
+        top: 80px;
+        left: 25px;
+    }
+
+    .bannerr {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .caixas {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .caixa {
+        width: 95%;
+        text-align: center;
+    }
+
+    .laranja p {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .descricao {
+        max-width: 100%;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    footer {
+        padding-top: 35px;
+        text-align: center;
+    }
+
+    .logo2 {
+        width: 150px;
+    }
+
+    .tam {
+        width: 150px;
+    }
+
+    .tam3 {
+        font-size: 15px;
+    }
+
+    .space {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .botao {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .but {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+    .sair {
+        margin-left: 45px;
+    }
+    .respon {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 81%;
+        display: block;
+        margin-left: 40px;
+    }
+    .margin_left {
+        margin-left: -10px;
+    }    
+    .laranja{
+        margin-left: -20px;
+    }
+    .plano{
+        width: 100%;
+        height: 200px;
+    }
+    .img-cont {
+        display: block;
+    }
+
+    /* Fim - Rodapé */
+}
+
+@media (max-width: 376px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 8px;
+    }
+
+    .logo1 {
+        width: 150px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .group {
+        width: 90%;
+        margin: 0 auto 12px auto;
+    }
+
+    .text-nav {
+        font-size: 15px;
+    }
+
+    .doe-agora {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .banner h1 {
+        font-size: 22px;
+        top: 25px;
+        left: 25px;
+    }
+
+    .banner p {
+        font-size: 17px;
+        top: 80px;
+        left: 25px;
+    }
+
+    .bannerr {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .caixas {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .caixa {
+        width: 95%;
+        text-align: center;
+    }
+
+    .laranja p {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .descricao {
+        max-width: 95%;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    footer {
+        padding-top: 35px;
+        text-align: center;
+    }
+
+    .logo2 {
+        width: 150px;
+    }
+
+    .tam {
+        width: 150px;
+    }
+
+    .tam3 {
+        font-size: 15px;
+    }
+
+    .space {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .ajuste {
+        padding-left: 0%;
+        padding-right: 75px;
+        width: 200px;
+    }
+
+    .botao {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .but {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .sair {
+        margin-left: 30px;
+    }
+    .respon {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 18px;
+        padding-right: 35px;
+        display: block;
+    }
+    .margin_left {
+        margin-left: -20px;
+    }    
+    .laranja{
+        margin-left: -20px;
+    }
+
+    .plano{
+        width: 100%;
+        height: 180px;
+    }
+    .img-cont {
+        display: block;
+    }
+
+}
+
+@media (max-width: 321px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .plano{
+        width: 100%;
+        height: 150px;
+    }
+
+    .logo1 {
+        width: 130px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .group {
+        width: 85%;
+        margin: 0 auto 10px auto;
+    }
+
+    .text-nav {
+        font-size: 14px;
+    }
+
+    .doe-agora {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .banner {
+        height: 180px;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .banner p {
+        font-size: 16px;
+        top: 70px;
+        left: 20px;
+    }
+
+    .bannerr {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .caixas {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .caixa {
+        width: 90%;
+        text-align: center;
+    }
+
+    .laranja p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .descricao {
+        max-width: 90%;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    footer {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .logo2 {
+        width: 140px;
+    }
+
+    .tam {
+        width: 140px;
+    }
+
+    .tam3 {
+        font-size: 14px;
+    }
+
+    .space {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .ajuste {
+        padding-left: 0%;
+        padding-right: 75px;
+        width: 200px;
+    }
+
+    .botao {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .but {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .sair {
+        margin-left: 30px;
+    }
+    .respon {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 6px;
+        padding-right: 0px;
+        display: block;
+    }
+    .margin_left {
+        margin-left: -20px;
+    }    
+    .laranja{
+        margin-left: -20px;
+    }
+    .img-cont {
+        display: block;
+    }
+}
